@@ -1,6 +1,9 @@
+import { MeiliSearch } from 'meilisearch';
 import meiliClient from '../../../shared/meilisearch';
+// import meiliClient from '../../../shared/meilisearch';
 
 export const deleteDoctorFromMeili = async (doctorId: string) => {
+  // TypeScript এর জন্য টাইপ নিশ্চিত করা
   const index = meiliClient.index('doctors');
 
   try {
